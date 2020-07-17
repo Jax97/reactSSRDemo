@@ -14,6 +14,7 @@ const initialState: IState = {
 }
 
 function reducer(state = initialState, action: IAction) {
+    console.log('action: ', action)
     switch (action.type) {
         case 'CHANGE_DATA':
             return {

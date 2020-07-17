@@ -16,7 +16,6 @@ const router = new Router();
 app.use(serve('./public'));
 
 router.get(['/', '/about'], async (ctx) => {
-  console.log('about进来了');
   const matchedRoutes = matchRoutes(routes, ctx.req.url);
   const store = createServerStore();
   let promises = [];
